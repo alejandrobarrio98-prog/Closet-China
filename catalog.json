@@ -1,0 +1,29 @@
+{
+  "updated": "2026-06-23T15:00:00.000Z",
+  "items": [
+    {
+      "id": "sample_1",
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80",
+      "permalink": "https://instagram.com",
+      "caption": "Este es un producto de ejemplo. Cuando conectes la API, estas tarjetas se reemplazan por tus publicaciones reales.",
+      "hashtags": ["vestidos", "nuevo"],
+      "timestamp": "2026-06-20T12:00:00+0000"
+    },
+    {
+      "id": "sample_2",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80",
+      "permalink": "https://instagram.com",
+      "caption": "Otro producto de ejemplo, para mostrar cómo se ve la grilla con varias prendas.",
+      "hashtags": ["casacas", "nuevo"],
+      "timestamp": "2026-06-18T12:00:00+0000"
+    },
+    {
+      "id": "sample_3",
+      "image": "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=800&q=80",
+      "permalink": "https://instagram.com",
+      "caption": "Tercer producto de ejemplo.",
+      "hashtags": ["vestidos"],
+      "timestamp": "2026-06-15T12:00:00+0000"
+    }
+  ]
+}

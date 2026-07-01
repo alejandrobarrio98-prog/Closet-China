@@ -1,0 +1,34 @@
+name: Sync catalog from Instagram
+
+on:
+  schedule:
+    # Every Monday at 09:00 UTC ≈ 04:00 in Lima. Edit the cron to change the day/time.
+    - cron: "0 9 * * 1"
+  workflow_dispatch: {} # lets you trigger a sync manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch latest catalog from Instagram
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: node scripts/fetch-instagram.mjs
+
+      - name: Commit catalog.json if it changed
+        run: |
+          git config user.name "catalog-bot"
+          git config user.email "catalog-bot@users.noreply.github.com"
+          git add catalog.json
+          git diff --staged --quiet || git commit -m "Sync catalog from Instagram"
+          git push
