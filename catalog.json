@@ -1,0 +1,38 @@
+{
+  "updated": "2026-07-01T00:00:00.000Z",
+  "items": [
+    {
+      "id": "sample_1",
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80",
+      "permalink": "https://instagram.com",
+      "caption": "Vestido midi de gasa, ideal para verano.",
+      "hashtags": ["vestidos", "nuevo"],
+      "timestamp": "2026-06-20T12:00:00+0000",
+      "clothingType": "vestido",
+      "classificationSource": "caption",
+      "talla": "M"
+    },
+    {
+      "id": "sample_2",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80",
+      "permalink": "https://instagram.com",
+      "caption": "Casaca de jean, corte oversize.",
+      "hashtags": ["casacas", "nuevo"],
+      "timestamp": "2026-06-18T12:00:00+0000",
+      "clothingType": "casaca",
+      "classificationSource": "caption",
+      "talla": "L"
+    },
+    {
+      "id": "sample_3",
+      "image": "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=800&q=80",
+      "permalink": "https://instagram.com",
+      "caption": "Vestido floral, corte A.",
+      "hashtags": ["vestidos"],
+      "timestamp": "2026-06-15T12:00:00+0000",
+      "clothingType": "vestido",
+      "classificationSource": "caption",
+      "talla": null
+    }
+  ]
+}

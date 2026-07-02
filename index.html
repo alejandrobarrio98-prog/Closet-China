@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Catálogo</title>
+<meta name="description" content="Catálogo de prendas, actualizado automáticamente desde Instagram." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-head">
+  <p class="eyebrow">Catálogo en línea</p>
+  <h1 class="shop-name" id="shopName">Tu Tienda</h1>
+  <p class="tagline">Se actualiza solo, cada vez que subo algo nuevo a Instagram</p>
+</header>
+
+<nav class="filters" id="filters" aria-label="Filtrar por categoría"></nav>
+
+<div class="rack-line" aria-hidden="true"></div>
+
+<main class="catalog" id="catalog" aria-live="polite"></main>
+
+<p class="empty-state" id="emptyState" hidden>
+  No hay prendas disponibles en este momento. Vuelve pronto.
+</p>
+
+<footer class="site-foot">
+  <a class="ig-link" id="igLink" href="https://instagram.com" target="_blank" rel="noopener">
+    Ver perfil en Instagram →
+  </a>
+  <p class="updated" id="lastUpdated"></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
